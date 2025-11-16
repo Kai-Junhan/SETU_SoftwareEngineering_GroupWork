@@ -1,0 +1,5 @@
+# users.txt — User Data (UTF-8). Each line: user name, user ID, password
+# Empty rows and lines starting with # are ignored
+
+张三,user001,password123
+李四,user002,password456

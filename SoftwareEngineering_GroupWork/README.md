@@ -46,5 +46,8 @@ Optimizes the system based on Version 2, with key additions including data stora
 
 
 
+
 （The data is stored in the TXT files located in the "src" directory at the same level as "NUIST-SETU-HW".）
 
+
+## PS: As a first-time GitHub user, I didn’t fully track my coding process with Git, missing incremental commits and a documented history of changes.

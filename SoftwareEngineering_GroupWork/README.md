@@ -1,4 +1,4 @@
-\# Library Management System - Version History
+# Library Management System - Version History
 
 
 
@@ -14,7 +14,7 @@ This directory contains three subfolders, each representing a revised version of
 
 
 
-\## Version 1: Technical Framework
+## Version 1: Technical Framework
 
 
 
@@ -26,7 +26,7 @@ Lays the basic technical foundation of the system, including core package struct
 
 
 
-\## Version 2: Core Functions
+## Version 2: Core Functions
 
 
 
@@ -38,7 +38,7 @@ Builds on Version 1 to implement essential business functionalities of the libra
 
 
 
-\## Version 3 ( Final Version ): Enhancements \\\& Improvements
+## Version 3 ( Final Version ): Enhancements \\\& Improvements
 
 
 

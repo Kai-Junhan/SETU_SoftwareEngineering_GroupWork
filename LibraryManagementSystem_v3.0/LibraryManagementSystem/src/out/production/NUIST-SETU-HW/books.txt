@@ -1,0 +1,6 @@
+# books.txt — Book Data (UTF-8). Each line: book title, author, ISBN, total quantity, number lent
+# Empty rows and lines starting with # are ignored
+
+Trisomy,Liu Cixin,9787536692930,30,12
+Alive,Yu Hua,9787506365437,20,7
+One Hundred Years of Solitude,García Márquez,9787544291175,25,18

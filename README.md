@@ -1,1 +1,1 @@
-# This folder contains the group assignment for programming practice by the SETU team.
+# This folder contains the group assignment for programming practice by the SETU students team.

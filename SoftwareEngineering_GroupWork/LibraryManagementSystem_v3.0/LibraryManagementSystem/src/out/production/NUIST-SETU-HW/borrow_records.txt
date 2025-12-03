@@ -1,5 +1,0 @@
-# borrow_records.txt — Borrow Record Data (UTF-8). Each line: record ID, borrow date, status (0-checked out, 1-returned)
-# Empty rows and lines starting with # are ignored
-
-BR001,2024-01-15,0
-BR002,2024-01-16,1

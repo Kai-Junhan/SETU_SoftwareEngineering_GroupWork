@@ -13,7 +13,28 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
+import static com.library.controller.MenuController.printMenu;
+
 public class Main {
+    // Color/Format Constants
+    public class ConsoleColor {
+        // Reset all formatting
+        public static final String RESET = "\033[0m";
+        // Text color
+        public static final String RED = "\033[31m";
+        public static final String GREEN = "\033[32m";
+        public static final String YELLOW = "\033[33m";
+        public static final String BLUE = "\033[34m";
+        public static final String PURPLE = "\033[35m";
+        public static final String CYAN = "\033[36m";
+        // Background color
+        public static final String BG_BLACK = "\033[40m";
+        public static final String BG_WHITE = "\033[47m";
+        // Text Style
+        public static final String BOLD = "\033[1m";
+        public static final String UNDERLINE = "\033[4m";
+    }
+
     // Static instances for service classes and scanner
     private static final Scanner scanner = new Scanner(System.in);
     private static final BookService bookService = new BookService();
@@ -44,6 +65,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        // Show the system interface
+        printMenu();
         // Create menu controller with dependencies
         MenuController menuController = new MenuController(scanner, bookService, userService, borrowService);
         // Start main menu
@@ -101,7 +124,7 @@ public class Main {
      * Uses multiple strategies to find the project root directory
      *
      * @param fileName Name of the file in resources folder
-     * @return Absolute path to the file, or null if cannot determine
+     * @return Absolute path to the file, or null if you cannot determine
      */
     private static String getResourceFilePath(String fileName) {
         // Strategy 1: Try to get the actual path of resource file from classpath first

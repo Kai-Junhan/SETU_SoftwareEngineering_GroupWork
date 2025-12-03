@@ -1,5 +1,6 @@
 package com.library.controller;
 
+import com.library.Main;
 import com.library.service.BookService;
 import com.library.service.UserService;
 import com.library.service.BorrowService;
@@ -19,6 +20,16 @@ public class MenuController {
         this.userService = userService;
         this.borrowService = borrowService;
     }
+
+    public static void printMenu() {
+        System.out.println(Main.ConsoleColor.BOLD + Main.ConsoleColor.BLUE +
+                "╔════════════════════════════════════════╗" + Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.BOLD + Main.ConsoleColor.BLUE +
+                "║       LibraryManagementSystem V3.0     ║" + Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.BOLD + Main.ConsoleColor.BLUE +
+                "╚════════════════════════════════════════╝" + Main.ConsoleColor.RESET);
+    }
+
 
     // Control main menu flow
     public void startMainMenu() {
@@ -100,82 +111,82 @@ public class MenuController {
 
     // Print main menu
     private void printMainMenu() {
-        System.out.println("\n===== Library Management System =====");
-        System.out.println("1. Book Management");
-        System.out.println("2. User Management");
-        System.out.println("3. Borrow/Return Management");
-        System.out.println("4. Save All Data");
-        System.out.println("0. Exit System");
-        System.out.println("======================================");
+        System.out.println(Main.ConsoleColor.CYAN +"\n===== Library Management System ====="+ Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE + "1. Book Management"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE +"2. User Management"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE +"3. Borrow/Return Management"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE +"4. Save All Data"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.RED +"0. Exit System"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.CYAN + "======================================" + Main.ConsoleColor.RESET);
     }
 
     // Print book management menu
     private void printBookMenu() {
-        System.out.println("\n===== Book Management =====");
-        System.out.println("1. Add Book");
-        System.out.println("2. Delete Book");
-        System.out.println("3. Update Book");
-        System.out.println("4. View All Books");
-        System.out.println("5. Search by ISBN");
-        System.out.println("6. Search by Book Name");
-        System.out.println("7. Search by Author");
-        System.out.println("0. Return to Main Menu");
-        System.out.println("===========================");
+        System.out.println(Main.ConsoleColor.CYAN +"\n===== Library Management System ====="+ Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"1. Add Book"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"2. Delete Book"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"3. Update Book"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"4. View All Books"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"5. Search by ISBN"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"6. Search by Book Name"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"7. Search by Author"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.RED+"0. Return to Main Menu"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.CYAN + "======================================" + Main.ConsoleColor.RESET);
     }
 
     // Print user management menu
     private void printUserMenu() {
-        System.out.println("\n===== User Management =====");
-        System.out.println("1. Add User");
-        System.out.println("2. Delete User");
-        System.out.println("3. Update User Information");
-        System.out.println("4. View All Users");
-        System.out.println("5. Search by User ID");
-        System.out.println("6. Search by User Name");
-        System.out.println("0. Return to Main Menu");
-        System.out.println("===========================");
+        System.out.println(Main.ConsoleColor.CYAN +"\n===== Library Management System ====="+ Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"1. Add User"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"2. Delete User"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"3. Update User Information"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"4. View All Users"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"5. Search by User ID"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"6. Search by User Name"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.RED+"0. Return to Main Menu"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.CYAN + "======================================" + Main.ConsoleColor.RESET);
     }
 
     // Print borrow/return management menu
     private void printBorrowMenu() {
-        System.out.println("\n===== Borrow/Return Management =====");
-        System.out.println("1. Add Borrow/Return Record");
-        System.out.println("2. Delete Borrow/Return Record");
-        System.out.println("3. Update Borrow/Return Status");
-        System.out.println("4. View All Records");
-        System.out.println("5. Search Record by ID");
-        System.out.println("6. Search Records by Status");
-        System.out.println("0. Return to Main Menu");
-        System.out.println("====================================");
+        System.out.println(Main.ConsoleColor.CYAN +"\n===== Library Management System ====="+ Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"1. Add Borrow/Return Record"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"2. Delete Borrow/Return Record"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"3. Update Borrow/Return Status"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"4. View All Records"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"5. Search Record by ID"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.PURPLE+"6. Search Records by Status"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.RED+"0. Return to Main Menu"+Main.ConsoleColor.RESET);
+        System.out.println(Main.ConsoleColor.CYAN + "======================================" + Main.ConsoleColor.RESET);
     }
 
     // Book operation methods
     private void addNewBook() {
-        System.out.println("\n----- Add New Book -----");
-        String name = getStringInput("Please enter book title: ");
-        String author = getStringInput("Please enter author: ");
-        String isbn = getStringInput("Please enter ISBN: ");
-        int quantity = getIntInput("Please enter total quantity: ");
-        int borrowed = getIntInput("Please enter borrowed quantity: ");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Add New Book -----"+ Main.ConsoleColor.RESET);
+        String name = getStringInput(Main.ConsoleColor.PURPLE+"Please enter book title: "+ Main.ConsoleColor.RESET);
+        String author = getStringInput(Main.ConsoleColor.PURPLE+"Please enter author: "+ Main.ConsoleColor.RESET);
+        String isbn = getStringInput(Main.ConsoleColor.PURPLE+"Please enter ISBN: "+ Main.ConsoleColor.RESET);
+        int quantity = getIntInput(Main.ConsoleColor.PURPLE+"Please enter total quantity: "+ Main.ConsoleColor.RESET);
+        int borrowed = getIntInput(Main.ConsoleColor.PURPLE+"Please enter borrowed quantity: "+ Main.ConsoleColor.RESET);
         com.library.model.Book book = new com.library.model.Book(name, author, isbn, quantity, borrowed);
         bookService.addBook(book);
     }
 
     private void updateBook() {
-        System.out.println("\n----- Update Book Information -----");
-        String isbn = getStringInput("Please enter ISBN of the book to update: ");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Update Book Information -----"+ Main.ConsoleColor.RESET);
+        String isbn = getStringInput(Main.ConsoleColor.BLUE+"Please enter ISBN of the book to update: ");
         
         // Show current book information first
-        System.out.println("\nCurrent book information:");
+        System.out.println(Main.ConsoleColor.YELLOW+"\nCurrent book information:"+ Main.ConsoleColor.RESET);
         bookService.searchByISBN(isbn);
         
-        System.out.println("\nEnter new information (leave empty to keep current):");
-        String newName = getStringInput("New book title: ");
-        String newAuthor = getStringInput("New author: ");
+        System.out.println(Main.ConsoleColor.YELLOW+"\nEnter new information (leave empty to keep current):"+ Main.ConsoleColor.RESET);
+        String newName = getStringInput(Main.ConsoleColor.BLUE+"New book title: "+ Main.ConsoleColor.RESET);
+        String newAuthor = getStringInput(Main.ConsoleColor.BLUE+"New author: "+ Main.ConsoleColor.RESET);
         
-        System.out.println("Enter new quantities (enter -1 to keep current):");
-        int newQuantity = getIntInput("New total quantity: ");
-        int newBorrowedQuantity = getIntInput("New borrowed quantity: ");
+        System.out.println(Main.ConsoleColor.YELLOW+"Enter new quantities (enter -1 to keep current):"+ Main.ConsoleColor.RESET);
+        int newQuantity = getIntInput(Main.ConsoleColor.BLUE+"New total quantity: "+ Main.ConsoleColor.RESET);
+        int newBorrowedQuantity = getIntInput(Main.ConsoleColor.BLUE+"New borrowed quantity: "+ Main.ConsoleColor.RESET);
         
         // Convert empty strings to null for name/author
         newName = newName.isEmpty() ? null : newName;
@@ -185,32 +196,32 @@ public class MenuController {
     }
 
     private void deleteBook() {
-        System.out.println("\n----- Delete Book -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Delete Book -----"+ Main.ConsoleColor.RESET);
         String isbn = getStringInput("Please enter ISBN of the book to delete: ");
         bookService.deleteBook(isbn);
     }
 
     private void searchBookByIsbn() {
-        System.out.println("\n----- Search by ISBN -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Search by ISBN -----"+ Main.ConsoleColor.RESET);
         String isbn = getStringInput("Please enter ISBN: ");
         bookService.searchByISBN(isbn);
     }
 
     private void searchBookByName() {
-        System.out.println("\n----- Search by Book Name -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Search by Book Name -----"+ Main.ConsoleColor.RESET);
         String keyword = getStringInput("Please enter book name keyword: ");
         bookService.searchByBookName(keyword);
     }
 
     private void searchBookByAuthor() {
-        System.out.println("\n----- Search by Author -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Search by Author -----"+ Main.ConsoleColor.RESET);
         String authorName = getStringInput("Please enter author name: ");
         bookService.searchByAuthor(authorName);
     }
 
     // User operation methods
     private void addNewUser() {
-        System.out.println("\n----- Add New User -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Add New User -----"+ Main.ConsoleColor.RESET);
         String id = getStringInput("Please enter user ID: ");
         String name = getStringInput("Please enter user name: ");
         String password = getStringInput("Please enter password: ");
@@ -219,13 +230,13 @@ public class MenuController {
     }
 
     private void deleteUser() {
-        System.out.println("\n----- Delete User -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Delete User -----"+ Main.ConsoleColor.RESET);
         String userId = getStringInput("Please enter ID of the user to delete: ");
         userService.deleteUser(userId);
     }
 
     private void updateUser() {
-        System.out.println("\n----- Update User Information -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Update User Information -----"+ Main.ConsoleColor.RESET);
         String userId = getStringInput("Please enter ID of the user to update: ");
         String newName = getStringInput("Please enter new user name: ");
         String newPassword = getStringInput("Please enter new password: ");
@@ -233,20 +244,20 @@ public class MenuController {
     }
 
     private void searchUserById() {
-        System.out.println("\n----- Search by User ID -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Search by User ID -----"+ Main.ConsoleColor.RESET);
         String userId = getStringInput("Please enter user ID: ");
         userService.searchByUserId(userId);
     }
 
     private void searchUserByName() {
-        System.out.println("\n----- Search by User Name -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Search by User Name -----"+ Main.ConsoleColor.RESET);
         String keyword = getStringInput("Please enter user name keyword: ");
         userService.searchByUserName(keyword);
     }
 
     // Borrow/return operation methods
     private void addBorrowRecord() {
-        System.out.println("\n----- Add Borrow/Return Record -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Add Borrow/Return Record -----"+ Main.ConsoleColor.RESET);
         String recordId = getStringInput("Please enter record ID: ");
         String date = getStringInput("Please enter borrow/return date (yyyy-MM-dd): ");
         int status = getIntInput("Please enter status (0-Checked Out, 1-Returned): ");
@@ -255,32 +266,32 @@ public class MenuController {
     }
 
     private void deleteBorrowRecord() {
-        System.out.println("\n----- Delete Borrow/Return Record -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Delete Borrow/Return Record -----"+ Main.ConsoleColor.RESET);
         String recordId = getStringInput("Please enter ID of the record to delete: ");
         borrowService.deleteBorrowRecord(recordId);
     }
 
     private void updateBorrowStatus() {
-        System.out.println("\n----- Update Borrow/Return Status -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Update Borrow/Return Status -----"+ Main.ConsoleColor.RESET);
         String recordId = getStringInput("Please enter ID of the record to update: ");
         int newStatus = getIntInput("Please enter new status (0-Checked Out, 1-Returned): ");
         borrowService.updateBorrowStatus(recordId, newStatus);
     }
 
     private void searchBorrowById() {
-        System.out.println("\n----- Search Record by ID -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Search Record by ID -----"+ Main.ConsoleColor.RESET);
         String recordId = getStringInput("Please enter record ID: ");
         borrowService.searchByBorrowId(recordId);
     }
 
     private void searchBorrowByStatus() {
-        System.out.println("\n----- Search Records by Status -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Search Records by Status -----"+ Main.ConsoleColor.RESET);
         int status = getIntInput("Please enter status (0-Checked Out, 1-Returned): ");
         borrowService.searchByStatus(status);
     }
 
     private void saveAllData() {
-        System.out.println("\n----- Save All Data -----");
+        System.out.println(Main.ConsoleColor.YELLOW+"\n----- Save All Data -----"+ Main.ConsoleColor.RESET);
         try {
             bookService.saveDataToFile();
             userService.saveDataToFile();
